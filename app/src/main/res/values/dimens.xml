@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_default">14sp</dimen>
+    <dimen name="text_size_mid">12sp</dimen>
+    <dimen name="text_size_small">8sp</dimen>
+    <dimen name="text_size_switch">10sp</dimen>
+    <dimen name="settingItemLength">70sp</dimen>
+    <dimen name="about_list_hight">40dp</dimen>
+    <dimen name="shadow_size">8dip</dimen>
+</resources>
