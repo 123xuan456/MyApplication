@@ -155,6 +155,19 @@ public class HomeActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_home);
         //直接打开蓝牙不询问用户
         share.bluetoothAdapter.enable();
+        //弹出对话框提示用户是否打开蓝牙
+//        if (!share.bluetoothAdapter.isEnabled()) {
+//            Intent turnOn = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+//            startActivityForResult(turnOn, 1);
+//            Toast.makeText(getApplicationContext(),
+//                    getResources().getText(R.string.on), Toast.LENGTH_SHORT)
+//                    .show();
+//        } else {
+//            Toast.makeText(getApplicationContext(),
+//                    getResources().getText(R.string.bt_turned_on),
+//                    Toast.LENGTH_SHORT).show();
+//        }
+
         context = HomeActivity.this;
         share.context = this;
         share.init();
@@ -195,6 +208,7 @@ public class HomeActivity extends Activity implements View.OnClickListener {
         if (requestCode == 1) {
             if (resultCode==RESULT_OK){
                 Toast.makeText(getApplicationContext(),
+
                         getResources().getText(R.string.on),
                         Toast.LENGTH_SHORT).show();
             }else if (resultCode==RESULT_CANCELED){

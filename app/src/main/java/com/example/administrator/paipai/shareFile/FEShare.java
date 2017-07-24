@@ -225,7 +225,7 @@ public class FEShare implements Serializable {
 	synchronized public boolean connect(BluetoothDevice device) {
 		// if (connect_state == BluetoothProfile.STATE_CONNECTED) return false;
 		// //打开只支持单连接
-		// connect_state = BluetoothProfile.STATE_CONNECTING;
+	    connect_state = BluetoothProfile.STATE_CONNECTING;
 		this.device = device;
 		stopSearch();
 		if (isSPP) {
